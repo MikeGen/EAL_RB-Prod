@@ -1,0 +1,5 @@
+CREATE USER [synapseausprod] FOR EXTERNAL PROVIDER;
+
+
+GO
+

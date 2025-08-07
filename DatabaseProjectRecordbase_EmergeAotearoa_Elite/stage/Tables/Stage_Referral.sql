@@ -1,0 +1,42 @@
+CREATE TABLE [stage].[Stage_Referral] (
+    [ID]                          INT            NOT NULL,
+    [PersonID]                    INT            NOT NULL,
+    [ReceivedDate]                DATETIME       NOT NULL,
+    [SourceReferrerID]            INT            NULL,
+    [SourceReferralID]            INT            NULL,
+    [TeamID]                      INT            NULL,
+    [OrganisationID]              INT            NULL,
+    [CurrentReferralStatusTypeID] INT            NULL,
+    [ReferralPriorityID]          INT            NULL,
+    [ExpectedArrivalDate]         DATETIME       NULL,
+    [ExpectedDepartureDate]       DATETIME       NULL,
+    [ActualArrivalDate]           DATETIME       NULL,
+    [ActualDepartureDate]         DATETIME       NULL,
+    [EndDate]                     DATETIME       NULL,
+    [Notes]                       NVARCHAR (MAX) NULL,
+    [OldReferralID]               INT            NULL,
+    [OldMovementID]               INT            NULL,
+    [UDF1]                        NVARCHAR (MAX) NULL,
+    [UDF2]                        NVARCHAR (MAX) NULL,
+    [UDF3]                        NVARCHAR (MAX) NULL,
+    [UDF4]                        NVARCHAR (MAX) NULL,
+    [UDF5]                        NVARCHAR (MAX) NULL,
+    [InterviewUserID]             INT            NULL,
+    [InterviewDate]               DATETIME       NULL,
+    [InactiveUserID]              INT            NULL,
+    [InactiveDate]                DATETIME       NULL,
+    [CreatedUserID]               INT            NOT NULL,
+    [CreatedDate]                 DATETIME       NOT NULL,
+    [ModifiedUserID]              INT            NULL,
+    [ModifiedDate]                DATETIME       NULL,
+    [DeletedUserID]               INT            NULL,
+    [DeletedDate]                 DATETIME       NULL,
+    [ReferralType]                VARCHAR (32)   NOT NULL,
+    [PresentingIssueId1]          INT            NULL,
+    [PresentingIssueId2]          INT            NULL,
+    [PresentingIssueId3]          INT            NULL
+);
+
+
+GO
+

@@ -1,0 +1,40 @@
+CREATE TABLE [stage].[Stage_Activity] (
+    [ID]                         INT            NOT NULL,
+    [StartDate]                  DATETIME       NOT NULL,
+    [EndDate]                    DATETIME       NOT NULL,
+    [Description]                NVARCHAR (MAX) NULL,
+    [Subject]                    NVARCHAR (300) NOT NULL,
+    [Location]                   NVARCHAR (300) NULL,
+    [MapReference]               NVARCHAR (50)  NULL,
+    [CreatedDate]                DATETIME       NOT NULL,
+    [CreatedUserID]              INT            NOT NULL,
+    [ModifiedDate]               DATETIME       NULL,
+    [ModifiedUserID]             INT            NULL,
+    [DeletedDate]                DATETIME       NULL,
+    [DeletedUserID]              INT            NULL,
+    [UDF1]                       NVARCHAR (MAX) NULL,
+    [UDF2]                       NVARCHAR (MAX) NULL,
+    [UDF3]                       NVARCHAR (MAX) NULL,
+    [UDF4]                       NVARCHAR (MAX) NULL,
+    [UDF5]                       NVARCHAR (MAX) NULL,
+    [ActivityTypeID]             INT            NULL,
+    [TeamID]                     INT            NULL,
+    [ActivityClassificationID]   INT            NULL,
+    [OnBehalfOfUserID]           INT            NULL,
+    [CreatedApplicationId]       INT            NULL,
+    [CreatedApplicationSyncDate] DATETIME       NULL,
+    [QuickActivityTemplateID]    INT            NULL,
+    [PrimaryActivityID]          INT            NULL,
+    [GroupActivityID]            INT            NULL,
+    [TeamAutocodingID]           INT            NULL,
+    [TravelDistance]             FLOAT (53)     NULL,
+    [EditorViewState]            NVARCHAR (MAX) NOT NULL,
+    [SavedByHumanAfterStartDate] BIT            NOT NULL,
+    [ActivityRecurrenceGroupId]  INT            NULL,
+    [WhanauInvolvement]          BIT            NULL,
+    [ActivityKind]               NVARCHAR (50)  NULL
+);
+
+
+GO
+

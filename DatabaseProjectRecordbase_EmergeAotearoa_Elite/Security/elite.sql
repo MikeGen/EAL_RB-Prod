@@ -1,0 +1,6 @@
+CREATE SCHEMA [elite]
+    AUTHORIZATION [dbo];
+
+
+GO
+

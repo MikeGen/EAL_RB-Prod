@@ -1,0 +1,6 @@
+CREATE SCHEMA [pvt]
+    AUTHORIZATION [dbo];
+
+
+GO
+

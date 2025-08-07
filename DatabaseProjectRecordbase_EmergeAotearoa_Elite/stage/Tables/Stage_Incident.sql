@@ -1,0 +1,41 @@
+CREATE TABLE [stage].[Stage_Incident] (
+    [ID]                          INT            NOT NULL,
+    [Date]                        DATETIME       NOT NULL,
+    [Title]                       NVARCHAR (500) NULL,
+    [DescriptionRaw]              NVARCHAR (MAX) NULL,
+    [DescriptionHtml]             NVARCHAR (MAX) NULL,
+    [Location]                    NVARCHAR (MAX) NULL,
+    [ImmediateActionTakenRaw]     NVARCHAR (MAX) NULL,
+    [ImmediateActionTakenHtml]    NVARCHAR (MAX) NULL,
+    [PossiblePreventionRaw]       NVARCHAR (MAX) NULL,
+    [PossiblePreventionHtml]      NVARCHAR (MAX) NULL,
+    [FurtherActionRequiredRaw]    NVARCHAR (MAX) NULL,
+    [FurtherActionRequiredHtml]   NVARCHAR (MAX) NULL,
+    [InvestigationDetailsRaw]     NVARCHAR (MAX) NULL,
+    [InvestigationDetailsHtml]    NVARCHAR (MAX) NULL,
+    [CurrentOwnerUserID]          INT            NULL,
+    [CurrentInvestigatorUserID]   INT            NULL,
+    [CurrentReporterUserID]       INT            NULL,
+    [IsPublish]                   BIT            NULL,
+    [PublishedDate]               DATETIME       NULL,
+    [AreaID]                      INT            NULL,
+    [InactiveDate]                DATETIME       NULL,
+    [InactiveUserID]              INT            NULL,
+    [CreatedDate]                 DATETIME       NOT NULL,
+    [CreatedUserID]               INT            NOT NULL,
+    [ModifiedDate]                DATETIME       NULL,
+    [ModifiedUserID]              INT            NULL,
+    [DeletedDate]                 DATETIME       NULL,
+    [DeletedUserID]               INT            NULL,
+    [CurrentIncidentStatusTypeID] INT            NULL,
+    [OutcomeDetailsRaw]           NVARCHAR (MAX) NULL,
+    [OutcomeDetailsHtml]          NVARCHAR (MAX) NULL,
+    [TeamID]                      INT            NULL,
+    [CurrentSuspensionID]         INT            NULL,
+    [ReportedByName]              NVARCHAR (100) NULL,
+    [CompanyId]                   INT            NOT NULL
+);
+
+
+GO
+

@@ -1,0 +1,42 @@
+CREATE TABLE [stage].[Stage_PersonMedication] (
+    [ID]                         INT            NOT NULL,
+    [MedicationName]             NVARCHAR (MAX) NOT NULL,
+    [MedicationBrand]            NVARCHAR (MAX) NOT NULL,
+    [MedicationDosage]           NVARCHAR (MAX) NOT NULL,
+    [PrescribedBy]               NVARCHAR (100) NULL,
+    [Frequency]                  NVARCHAR (300) NULL,
+    [PrescriptionDate]           DATETIME       NULL,
+    [RouteMethodID]              INT            NOT NULL,
+    [DoseMorning]                NUMERIC (18)   NULL,
+    [DoseMidday]                 NUMERIC (18)   NULL,
+    [DoseEvening]                NUMERIC (18)   NULL,
+    [DoseBed]                    NUMERIC (18)   NULL,
+    [IsBlisterPack]              BIT            NULL,
+    [PRN]                        BIT            NULL,
+    [PRNExpiryDate]              DATETIME       NULL,
+    [PRNInstructions]            NVARCHAR (MAX) NULL,
+    [SideEffects]                NVARCHAR (MAX) NULL,
+    [MaxDoseIn24Hours]           NVARCHAR (50)  NULL,
+    [MinIntervalBetweenDoses]    NVARCHAR (50)  NULL,
+    [IsSelfMedicated]            BIT            NULL,
+    [DiscontinuedDate]           DATETIME       NULL,
+    [DiscontinuedBy]             NVARCHAR (100) NULL,
+    [DiscontinuedReason]         NVARCHAR (MAX) NULL,
+    [PersonID]                   INT            NOT NULL,
+    [MigratedNameAndBrand]       NVARCHAR (MAX) NULL,
+    [CreatedUserID]              INT            NOT NULL,
+    [CreatedDate]                DATETIME       NOT NULL,
+    [ModifiedUserID]             INT            NULL,
+    [ModifiedDate]               DATETIME       NULL,
+    [DeletedUserID]              INT            NULL,
+    [DeletedDate]                DATETIME       NULL,
+    [SpecialAuthorityNumber]     NVARCHAR (50)  NULL,
+    [Comments]                   NVARCHAR (MAX) NULL,
+    [IsCustom]                   BIT            NOT NULL,
+    [IsControlled]               BIT            NOT NULL,
+    [SpecialAuthorityExpiryDate] DATETIME       NULL
+);
+
+
+GO
+

@@ -1,0 +1,40 @@
+CREATE TABLE [legacy].[FactReferral] (
+    [ID]                          INT            NOT NULL,
+    [PersonID]                    INT            NULL,
+    [ServiceStartDate]            DATETIME       NULL,
+    [ServiceEndDate]              DATETIME       NULL,
+    [ReceivedDate]                DATETIME       NOT NULL,
+    [SourceReferrerID]            INT            NULL,
+    [SourceReferralID]            INT            NULL,
+    [TeamID]                      INT            NULL,
+    [OrganisationID]              INT            NULL,
+    [CurrentReferralStatusTypeID] INT            NULL,
+    [ReferralPriorityID]          INT            NULL,
+    [ExpectedArrivalDate]         DATETIME       NULL,
+    [ExpectedDepartureDate]       DATETIME       NULL,
+    [ActualArrivalDate]           DATETIME       NULL,
+    [ActualDepartureDate]         DATETIME       NULL,
+    [EndDate]                     DATETIME       NULL,
+    [Notes]                       NVARCHAR (MAX) NULL,
+    [InterviewUserID]             INT            NULL,
+    [InterviewDate]               DATETIME       NULL,
+    [CreatedUserID]               INT            NOT NULL,
+    [CreatedDate]                 DATETIME       NOT NULL,
+    [IsInbound]                   INT            NOT NULL,
+    [PendingDate]                 DATETIME       NULL,
+    [PendingReason]               INT            NULL,
+    [WaitlistDate]                DATETIME       NULL,
+    [WaitlistReason]              INT            NULL,
+    [AcceptedDate]                DATETIME       NULL,
+    [AcceptedReason]              INT            NULL,
+    [DischargeDate]               DATETIME       NULL,
+    [DischargeReason]             INT            NULL,
+    [DeclineDate]                 DATETIME       NULL,
+    [DeclineReason]               INT            NULL,
+    [DischargeComments]           NVARCHAR (MAX) NULL,
+    CONSTRAINT [PK_legacy_FactReferral] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+GO
+

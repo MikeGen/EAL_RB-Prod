@@ -1,0 +1,40 @@
+CREATE TABLE [stage].[Stage_User] (
+    [ID]                        INT            NOT NULL,
+    [Username]                  NVARCHAR (300) NULL,
+    [FirstName]                 NVARCHAR (50)  NULL,
+    [LastName]                  NVARCHAR (50)  NULL,
+    [PreferredName]             NVARCHAR (50)  NULL,
+    [EmailAddress]              NVARCHAR (300) NULL,
+    [Position]                  NVARCHAR (50)  NULL,
+    [ReportsToUserID]           INT            NULL,
+    [AspNetUserID]              VARCHAR (100)  NULL,
+    [SID]                       VARCHAR (50)   NULL,
+    [EmployeeNumber]            NVARCHAR (50)  NULL,
+    [OldUserID]                 INT            NULL,
+    [LicenceType]               VARCHAR (50)   NOT NULL,
+    [IsRecordbaseAdministrator] BIT            NOT NULL,
+    [IsChampion]                BIT            NOT NULL,
+    [UserTypeID]                INT            NOT NULL,
+    [DisabledDate]              DATETIME       NULL,
+    [DisabledUserID]            INT            NULL,
+    [DisabledNotes]             NVARCHAR (MAX) NULL,
+    [iCalendarEnabled]          BIT            NOT NULL,
+    [iCalendarToken]            NVARCHAR (50)  NULL,
+    [CreatedDate]               DATETIME       NOT NULL,
+    [CreatedUserID]             INT            NOT NULL,
+    [ModifiedDate]              DATETIME       NULL,
+    [ModifiedUserID]            INT            NULL,
+    [DeletedDate]               DATETIME       NULL,
+    [DeletedUserID]             INT            NULL,
+    [IsVolunteer]               BIT            NULL,
+    [EmploymentTypeId]          INT            NULL,
+    [FTE]                       DECIMAL (3, 1) NULL,
+    [Comments]                  NVARCHAR (MAX) NULL,
+    [PersonId]                  INT            NULL,
+    [PositionId]                INT            NULL,
+    [RecordbaseIdentitySubject] INT            NULL
+);
+
+
+GO
+
